@@ -1,26 +1,26 @@
 source 'https://rubygems.org'
 
-gem 'rails', '3.2.13'
+gem 'rails', '5.0.0'
 
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
 gem 'mongoid'
 gem 'pusher'
-gem 'devise'
+gem 'devise', '>= 4.0.0'
 gem "haml", ">= 3.0.0"
-gem "haml-rails"
+gem "haml-rails", ">= 0.5.3"
 gem 'cancan'
-gem 'simple_form'
+gem 'simple_form', '>= 3.2.1'
 gem 'bootstrap-sass', '~> 2.3.0.1'
 
 #gem "therubyracer"
 # Gems used only for assets and not required
 # in production environments by default.
 group :assets do
-  gem 'sass-rails',   '~> 3.2.3'
-  gem 'coffee-rails', '~> 3.2.1'
-  gem "less-rails", '~> 2.3.1' #Sprockets (what Rails 3.1 uses for its asset pipeline) supports LESS
+  gem 'sass-rails', '~> 5.0.5'
+  gem 'coffee-rails', '~> 4.1.1'
+  gem "less-rails", "~> 2.4.0" #Sprockets (what Rails 3.1 uses for its asset pipeline) supports LESS
   gem 'less-rails-bootstrap', github: 'metaskills/less-rails-bootstrap', ref: 'cbe20d4593e21297f7bc3bc6bc6471a7ad18e890'
   # See https://github.com/sstephenson/execjs#readme for more supported runtimes
   gem 'therubyracer', :platforms => :ruby
@@ -28,11 +28,11 @@ group :assets do
   gem 'uglifier', '>= 1.0.3'
 end
 gem 'carrierwave-mongoid'
-gem "jquery-fileupload-rails"
+gem "jquery-fileupload-rails", ">= 0.4.2"
 gem 'capistrano', '~> 2.15'
-gem 'quiet_assets', group: :development
+gem 'quiet_assets', '>= 1.0.3', group: :development
 
-gem 'jquery-rails'
+gem 'jquery-rails', '>= 4.0.1'
 
 # To use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'
