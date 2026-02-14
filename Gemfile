@@ -5,7 +5,7 @@ gem 'rails', '3.2.13'
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
-gem 'mongoid'
+gem 'mongoid', '>= 7.6.1'
 gem 'pusher'
 gem 'devise'
 gem "haml", ">= 3.0.0"
@@ -27,7 +27,7 @@ group :assets do
 
   gem 'uglifier', '>= 1.0.3'
 end
-gem 'carrierwave-mongoid'
+gem 'carrierwave-mongoid', '>= 1.1.0'
 gem "jquery-fileupload-rails"
 gem 'capistrano', '~> 2.15'
 gem 'quiet_assets', group: :development
